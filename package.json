@@ -1,0 +1,43 @@
+{
+  "name": "nft-aggregator",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RankJay/nft-aggregator.git"
+  },
+  "keywords": [
+    "rarible",
+    "opensea",
+    "price-feed",
+    "oracles",
+    "price",
+    "oracles",
+    "nft",
+    "aggregator",
+    "nftaggregator",
+    "web3",
+    "decentralized",
+    "blockchain",
+    "ethereum",
+    "javascript",
+    "node",
+    "diadata",
+    "messari"
+  ],
+  "author": "Jay Rank",
+  "bugs": {
+    "url": "https://github.com/RankJay/nft-aggregator/issues"
+  },
+  "homepage": "https://github.com/RankJay/nft-aggregator#readme",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "core-js": "^3.21.1",
+    "web3": "^1.7.0"
+  }
+}
