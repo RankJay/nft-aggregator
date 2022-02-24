@@ -1,6 +1,6 @@
 {
   "name": "nft-aggregator",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -36,10 +36,8 @@
   "homepage": "https://github.com/RankJay/nft-aggregator#readme",
   "license": "ISC",
   "dependencies": {
-    "@rarible/sdk": "^0.8.34",
     "axios": "^0.26.0",
     "core-js": "^3.21.1",
-    "opensea-js": "^2.0.1",
     "web3": "^1.7.0"
   }
 }
