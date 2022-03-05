@@ -57,7 +57,7 @@ class MintableAggregator {
 			return await axios.get( this.network + '/assets', { params : (Object.entries(payload).length === 0 ? console.log(new CustomError('Please enter atleast 1 valid parameter').sendError) : payload) }).then(res => res.data).catch(err => console.log("Something went wrong while fetching data from Opensea APIs. StackTrace here:\n" + err))
 		}
 		catch (e) {
-			console.log("Invalied response. Please enter the correct category, owner address, network, size, auction or  order by date paramater")
+			console.log("Invalied response. Please enter the correct category, owner address, network, size, auction or  order by dateparamater")
 		}
 	}
 

@@ -114,6 +114,15 @@ class OpenseaAggregator {
 		}
 	}
 
+	getAllCollections = async () => {
+		try {
+			return await axios.get( 'https://api.opensea.io/api/v1/collections' ).then(res => res.data).catch(err => console.log("Something went wrong while fetching data from Opensea APIs. StackTrace here:\n" + err))
+		}
+		catch (e) {
+			console.log("Invalied response. Please enter the correct Contract or Item ID")
+		}
+	}
+
 	getNftItemByContract = async (assetContractAddress=null) => {
 		try {
 			let payload = {}

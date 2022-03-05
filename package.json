@@ -1,7 +1,7 @@
 {
   "name": "nft-aggregator",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.1.1",
+  "description": "nft-aggregator is a SDK built to fetch NFT metadata from world-renowed NFT marketplaces over EVM-compatible blockchains.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

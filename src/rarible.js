@@ -83,6 +83,19 @@ class RaribleAggregator {
 		}
 	}
 
+	getAllCollections = async (blockchain='ETHEREUM') => {
+		try {
+			let payload = {}
+			blockchain == null || blockchain.length === 0 ?  null : payload.blockchains = blockchain
+
+			return await axios.get( 'https://api.rarible.org/v0.1/collections/all', { params : (Object.entries(payload).length === 0 ? console.log(new CustomError('Please enter atleast 1 valid parameter').sendError) : payload) }).then(res => res.data).catch(err => console.log("Something went wrong while fetching data from Opensea APIs. StackTrace here:\n" + err))
+		}
+		catch (e) {
+			console.log("Invalied response. Please enter the correct Collection ID")
+		}
+	}
+
+
 	getSellOrderByMakerAndByStatus = async (makerAddress) => {
 		try {
 			return await axios.get( this.network + '/order/orders/sell/byMakerAndByStatus', { params : { maker : makerAddress } }).then(res => res.data).catch(err => console.log("Something went wrong while fetching data from Rarible APIs. StackTrace here:\n" + err))
