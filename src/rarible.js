@@ -1,4 +1,3 @@
-const Web3 = require('web3')
 const axios = require('axios')
 
 class CustomError extends Error {  
